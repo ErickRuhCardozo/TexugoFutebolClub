@@ -1,3 +1,6 @@
+
+<!--https://youtube.com/shorts/RnIGxm8JTAc?feature=share -->
+
 <!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="dark">
 <head>
@@ -18,9 +21,28 @@
 				<label class="form-label" for="name">Nome</label>
 				<input class="form-control" type="text" name="name" id="name">
 			</div>
+			<div>
+				<label class="form-label" for="name">Idade</label>
+				<input class="form-control" type="text" name="idade" id="idade">
+			</div>
 
 			<input class="btn btn-success w-100 mt-3" type="submit" value="Cadastrar">
 		</form>
 	</div>
+<?php 
+ $nome=$_POST["nome"];
+ $idade=$_POST['idade']
+
+ if($idade >=7&&$idade <= 9){
+echo "<h2> Classificação fraldinha </h2>";
+ }
+ else if($idade >=10&&$idade <=11){
+echo "<h2> Classificação dente de leite</h2>"
+}
+else if($idade >=12&&id)
+
+ 
+
+?>
 </body>
 </html>
