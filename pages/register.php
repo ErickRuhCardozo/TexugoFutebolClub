@@ -1,6 +1,3 @@
-
-<!--https://youtube.com/shorts/RnIGxm8JTAc?feature=share -->
-
 <!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="dark">
 <head>
@@ -31,29 +28,25 @@
 	</div>
 <?php 
 if (isset($_POST['botao'])) {
- $nome=$_POST['name'];
- $idade=$_POST['idade'];
+	$nome=$_POST['name'];
+	$idade=$_POST['idade'];
 
- if($idade >=7&&$idade <= 9){
-echo "<h2> Classificação fraldinha </h2>";
- }
- else if($idade >=10&&$idade <=11){
-echo "<h2> Classificação dente de leite</h2>";
-}
-else if($idade >=12&&$idade <=13){
-echo  "<h2> Classificação mirim</h2>";
-}
-else if($idade >=14&&$idade <=15){
-echo  "<h2> Classificação infantil</h2>";
-}
-else if($idade >=16&&$idade <=16){
-echo  "<h2> Classificação infanto-juvenil</h2>";
-}
-else if($idade >=17&&$idade <=17){
-echo  "<h2> Classificação juvenil</h2>";
-}
-else if($idade >=18&&$idade <=20){
-echo  "<h2> Classificação júnior</h2>";
+	if ($idade < 7) {
+		echo '<h2>Idade Mínima: 7 Anos</h2>';
+	} else if($idade >= 7 && $idade <= 9){
+		echo "<h2>Classificação Fraldinha </h2>";
+	} else if($idade >= 10 && $idade <= 11){
+		echo "<h2>Classificação Dente de Leite</h2>";
+	} else if($idade >= 12 && $idade <= 13){
+		echo "<h2>Classificação Mirim</h2>";
+	} else if($idade >= 14 && $idade <= 15){
+		echo "<h2>Classificação Infantil</h2>";
+	} else if($idade >= 16 && $idade <= 16){
+		echo "<h2>Classificação Infanto-Juvenil</h2>";
+	} else if($idade >= 17 && $idade <= 17){
+		echo "<h2>Classificação Juvenil</h2>";
+	} else if($idade >= 18 && $idade <= 20){
+		echo "<h2>Classificação Júnior</h2>";
 	}
 }
 ?>
