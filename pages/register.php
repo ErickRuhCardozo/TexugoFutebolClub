@@ -26,11 +26,12 @@
 				<input class="form-control" type="text" name="idade" id="idade">
 			</div>
 
-			<input class="btn btn-success w-100 mt-3" type="submit" value="Cadastrar">
+			<input class="btn btn-success w-100 mt-3"  name="botao" type="submit" value="Cadastrar">
 		</form>
 	</div>
 <?php 
- $nome=$_POST["nome"];
+if (isset($_POST['botao'])) {
+ $nome=$_POST['name'];
  $idade=$_POST['idade'];
 
  if($idade >=7&&$idade <= 9){
@@ -52,13 +53,9 @@ else if($idade >=17&&$idade <=17){
 echo  "<h2> Classificação juvenil</h2>";
 }
 else if($idade >=18&&$idade <=20){
-echo  "<h2> Classificação júnior</h2>"
+echo  "<h2> Classificação júnior</h2>";
 	}
-	
-	
-
- 
-
+}
 ?>
 </body>
 </html>
