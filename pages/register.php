@@ -31,7 +31,7 @@
 	</div>
 <?php 
  $nome=$_POST["nome"];
- $idade=$_POST['idade']
+ $idade=$_POST['idade'];
 
  if($idade >=7&&$idade <= 9){
 echo "<h2> Classificação fraldinha </h2>";
